@@ -1,5 +1,5 @@
 import { createClient } from "@libsql/client";
 
 export const client = createClient({
-    url: ''
+    url: 'file:local.db'
 })

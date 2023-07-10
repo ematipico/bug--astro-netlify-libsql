@@ -5,4 +5,5 @@ import { client } from "./db";
 export const onRequest = defineMiddleware((context, next) => {
     console.log(client);
     context.locals.data = "Hello world!"
+    return next();
 });
